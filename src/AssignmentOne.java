@@ -49,7 +49,7 @@ public class AssignmentOne {
         //Create a method, called printExistingAppointments to print all the existing appointments in the ArrayList
         public static void printExistingAppointments(ArrayList<Appointment> appointmentList) {
             if (appointmentList.isEmpty()) {
-                System.out.println("没有现有的预约。");
+                System.out.println("No existing appointments.");
             } else {
                 for (Appointment appointment : appointmentList) {
                     appointment.printAllVariables();
@@ -68,7 +68,7 @@ public class AssignmentOne {
             }
         }
         if (!found) {
-            System.out.println("未找到该手机对应的预约。");
+            System.out.println("No reservation can be found for this phone.");
         }
     }
 }
