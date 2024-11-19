@@ -1,20 +1,20 @@
 public class OtherHealthProfessional extends HealthProfessional {
 
-    // 新增实例变量，用于区分其他类型健康专业人员，比如所属科室
+    //Added instance variables to distinguish other types of health professionals, such as their department
     private String department;
 
-    // 默认构造函数
+    //Default constructor 
     public OtherHealthProfessional() {
         super();
     }
 
-    // 第二个构造函数初始化所有实例变量（包括基类中的变量）
+    //The second constructor initializes all instance variables (including those in the base class)
     public OtherHealthProfessional(int ID, String name, String type, String department) {
         super(ID, name, type);
         this.department = department;
     }
 
-    // 打印卫生专业人员详细信息（包括卫生专业人员类型）的方法
+    //A method for printing health professional details, including the type of health professional
     @Override
     public void printAllVariables() {
         super.printAllVariables();
@@ -22,7 +22,7 @@ public class OtherHealthProfessional extends HealthProfessional {
         System.out.println("Health Professional Type: Other Health Professional");
     }
 
-    // 以下是新增实例变量的getter和setter方法
+    //Here are the getter and setter methods for the new instance variable
 
     public String getDepartment() {
         return department;
